@@ -8,9 +8,9 @@ if __name__ == "__main__":
     pbm_image_read_write_service = PBMImageReadWriteService()
     two_dimensional_fourier_transform_service = TwoDimensionalFourierTransformService()
 
-    square_image_side_length = 51
+    square_image_side_length = 129
     white_square_side_length = int(square_image_side_length*20/100)
-    filter_radius = white_square_side_length
+    filter_radius = 50 # white_square_side_length
 
     pbm_image_read_write_service.generate_pgm_image_with_square_white_block_in_the_middle(square_image_side_length,
                                                                                           square_image_side_length,
